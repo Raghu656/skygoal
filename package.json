@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "size-limit": [
+    {
+      "path": "index.js",
+      "import": "{ createStore }",
+      "limit": "500 ms"
+    }
+  ],
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "babel src -d lib",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.7.0",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11",
+    "mongoose-unix-timestamp": "^1.0.6",
+    "nodemon": "^2.0.12"
+  }
+}
